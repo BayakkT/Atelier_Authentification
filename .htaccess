@@ -1,4 +1,4 @@
 AuthName "Accès protégé"
 AuthType Basic
-AuthUserFile /home/{votre_compte_Alwaysdata}/www/.htpasswd
+AuthUserFile /home/tatiana25/www/.htpasswd
 Require valid-user
