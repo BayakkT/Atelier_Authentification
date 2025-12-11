@@ -1,4 +1,4 @@
 AuthName "Accès protégé"
 AuthType Basic
-AuthUserFile /home/tatiana25/www/.htpasswd
+AuthUserFile /home/tatiana25/www/atelier1/.htpasswd
 Require valid-user
