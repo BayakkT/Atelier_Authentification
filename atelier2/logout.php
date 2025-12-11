@@ -1,8 +1,16 @@
 <?php
-// Supprime le cookie d'authentification
-setcookie('authToken', '', time() - 3600, '/', '', false, true); // Cookie expiré par la valeur -3600. Il n'est donc plus valable
+session_start();
 
-// Redirection vers la page de connexion
+// Supprimer toutes les variables de session
+$_SESSION = [];
+
+// Détruire la session côté serveur
+session_destroy();
+
+// Supprimer le cookie d'authentification
+setcookie('authToken', '', time() - 3600, '/', '', false, true);
+
+// Rediriger vers la page de connexion
 header('Location: index.php');
 exit();
 ?>
